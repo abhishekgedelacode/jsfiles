@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="" id="box">
+      <div class="field">
+        <label for="fullname">FullName: </label>
+        <input type="text" name="fullname" id="fullname" />
+        <p class="msg" id="fullnamemsg"></p>
+      </div>
+      <div class="field">
+        <label for="dob">Date Of Birth: </label>
+        <input type="date" name="dob" id="dob" />
+        <p class="msg" id="dobmsg"></p>
+      </div>
+      <div class="field">
+        <label for="gender">Gender: </label>
+        <input class="opt" type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input
+          class="opt"
+          type="radio"
+          name="gender"
+          id="female"
+          value="female"
+        />
+        <label for="female">Female</label>
+        <input
+          class="opt"
+          type="radio"
+          name="gender"
+          id="other"
+          value="other"
+        />
+        <label for="other">Other</label>
+        <p class="msg" id="gendermsg"></p>
+      </div>
+      <div class="field">
+        <label for="lang">Languages Known: </label>
+        <input class="langs" type="checkbox" name="lang" id="eng">
+        <label for="eng">English</label>
+        <input class="langs" type="checkbox" name="lang" id="hin">
+        <label for="hin">Hindi</label>
+        <input class="langs" type="checkbox" name="lang" id="tel">
+        <label for="tel">Telugu</label>
+        <input class="langs" type="checkbox" name="lang" id="tam">
+        <label for="tam">Tamil</label>
+        <p class="msg" id="langmsg"></p>
+      </div>
+      <div class="field">
+        <label for="phone">Phone No: </label>
+        <input type="tel" name="phone" id="phone">
+        <p class="msg" id="phonemsg"></p>
+      </div>
+      <div class="field">
+        <label for="email">EMail: </label>
+        <input type="email" name="email" id="email" />
+        <p class="msg" id="emailmsg"></p>
+      </div>
+      <div class="field">
+        <label for="idproof">ID Proof: </label>
+        <select name="idproof" id="idproof">
+          <option value="aadhar">Aadhar Card</option>
+          <option value="vote">Voter ID</option>
+          <option value="drive">Driving</option>
+        </select>
+        <p class="msg" id="idproofmsg"></p>
+      </div>
+      <div class="field">
+        <label for="address">Address: </label>
+        <textarea name="address" id="address" cols="30" rows="2"></textarea>
+        <p class="msg" id="addressmsg"></p>
+      </div>
+      <div class="field">
+        <label for="username">UserName: </label>
+        <input type="text" name="username" id="username" />
+        <p class="msg" id="usernamemsg"></p>
+      </div>
+      <div class="field">
+        <label for="password">PassWord: </label>
+        <input type="password" name="password" id="password" />
+        <p class="msg" id="passwordmsg"></p>
+      </div>
+      <div class="field">
+        <label for="cpassword">Confirm PassWord: </label>
+        <input type="password" name="cpassword" id="cpassword" />
+        <p class="msg" id="cpasswordmsg"></p>
+      </div>
+      <div class="field">
+        <input type="checkbox" name="tc" id="tc" />
+        <label for="tc">terms &amp; conditions</label>
+        <p class="msg" id="tcmsg"></p>
+      </div>
+      <div class="field">
+        <input
+          type="submit"
+          onclick="return validate()"
+          value="submit"
+          id="sbtn"
+        />
+      </div>
+      <div id="final">
+        <h1 id="demo">form submitted</h1>
+      </div>
+    </form>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
